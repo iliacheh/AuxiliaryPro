@@ -5,7 +5,7 @@
   xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
 
   <Id>05c2e1c9-3e1d-406e-9a91-e9ac64854143</Id>
-  <Version>1.0.0.2</Version>
+  <Version>1.0.0.3</Version>
   <ProviderName>Ilia Chekharin</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Auxiliary Pro"/>
@@ -13,7 +13,6 @@
 
   <IconUrl DefaultValue="https://iliacheh.github.io/AuxiliaryPro/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://iliacheh.github.io/AuxiliaryPro/assets/icon-64.png"/>
-  <SupportUrl DefaultValue="https://github.com/iliacheh/AuxiliaryPro"/>
 
   <AppDomains>
     <AppDomain>https://iliacheh.github.io</AppDomain>
@@ -24,6 +23,7 @@
   </Hosts>
 
   <DefaultSettings>
+    <!-- EXCEL READS THIS LINK TO LOAD THE UI -->
     <SourceLocation DefaultValue="https://iliacheh.github.io/AuxiliaryPro/taskpane.html"/>
   </DefaultSettings>
 
@@ -43,22 +43,8 @@
             <OfficeTab id="TabHome">
               <Group id="CommandsGroup">
                 <Label resid="CommandsGroup.Label" />
-                <Icon>
-                  <bt:Image size="16" resid="Icon.16x16" />
-                  <bt:Image size="32" resid="Icon.32x32" />
-                  <bt:Image size="80" resid="Icon.80x80" />
-                </Icon>
                 <Control xsi:type="Button" id="TaskpaneButton">
                   <Label resid="TaskpaneButton.Label" />
-                  <Supertip>
-                    <Title resid="TaskpaneButton.Label" />
-                    <Description resid="TaskpaneButton.Tooltip" />
-                  </Supertip>
-                  <Icon>
-                    <bt:Image size="16" resid="Icon.16x16" />
-                    <bt:Image size="32" resid="Icon.32x32" />
-                    <bt:Image size="80" resid="Icon.80x80" />
-                  </Icon>
                   <Action xsi:type="ShowTaskpane">
                     <TaskpaneId>ButtonId1</TaskpaneId>
                     <SourceLocation resid="Taskpane.Url" />
@@ -72,27 +58,19 @@
     </Hosts>
 
     <Resources>
-      <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://iliacheh.github.io/AuxiliaryPro/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://iliacheh.github.io/AuxiliaryPro/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://iliacheh.github.io/AuxiliaryPro/assets/icon-80.png"/>
-      </bt:Images>
-
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://github.com/iliacheh/AuxiliaryPro" />
         <bt:Url id="Commands.Url" DefaultValue="https://iliacheh.github.io/AuxiliaryPro/commands.html" />
         <bt:Url id="Taskpane.Url" DefaultValue="https://iliacheh.github.io/AuxiliaryPro/taskpane.html" />
       </bt:Urls>
-
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="Auxiliary Pro" />
         <bt:String id="CommandsGroup.Label" DefaultValue="Auxiliary Pro" />
         <bt:String id="TaskpaneButton.Label" DefaultValue="Show Tracer" />
       </bt:ShortStrings>
-
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Audit formulas and trace precedents instantly." />
-        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Open the Interactive Tracer" />
+        <bt:String id="GetStarted.Description" DefaultValue="Interactive Formula Tracer" />
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Open the Tracer Taskpane" />
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
