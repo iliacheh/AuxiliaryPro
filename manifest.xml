@@ -5,13 +5,12 @@
   xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
 
   <Id>05c2e1c9-3e1d-406e-9a91-e9ac64854143</Id>
-  <Version>1.0.0.0</Version>
+  <Version>1.0.0.2</Version>
   <ProviderName>Ilia Chekharin</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Auxiliary Pro"/>
   <Description DefaultValue="Advanced Formula Tracer and Workbook Auditor."/>
 
-  <!-- Updated Icon URLs to point to GitHub Pages -->
   <IconUrl DefaultValue="https://iliacheh.github.io/AuxiliaryPro/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://iliacheh.github.io/AuxiliaryPro/assets/icon-64.png"/>
   <SupportUrl DefaultValue="https://github.com/iliacheh/AuxiliaryPro"/>
@@ -25,7 +24,6 @@
   </Hosts>
 
   <DefaultSettings>
-    <!-- MAIN ENTRY POINT: Must point to the hosted .html file -->
     <SourceLocation DefaultValue="https://iliacheh.github.io/AuxiliaryPro/taskpane.html"/>
   </DefaultSettings>
 
@@ -87,14 +85,14 @@
       </bt:Urls>
 
       <bt:ShortStrings>
-        <bt:String id="GetStarted.Title" DefaultValue="Auxiliary Pro is Ready!" />
+        <bt:String id="GetStarted.Title" DefaultValue="Auxiliary Pro" />
         <bt:String id="CommandsGroup.Label" DefaultValue="Auxiliary Pro" />
         <bt:String id="TaskpaneButton.Label" DefaultValue="Show Tracer" />
       </bt:ShortStrings>
 
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Your formula auditing tools have loaded from GitHub. Click 'Show Tracer' on the Home tab to begin." />
-        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Open the Interactive Formula Tracer" />
+        <bt:String id="GetStarted.Description" DefaultValue="Audit formulas and trace precedents instantly." />
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Open the Interactive Tracer" />
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>
